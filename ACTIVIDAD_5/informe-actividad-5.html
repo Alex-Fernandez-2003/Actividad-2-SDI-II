@@ -1,0 +1,410 @@
+<!DOCTYPE html><html><head>
+      <title>informe-actividad-5</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/alex/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.30/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-details{margin:0;padding:0;border:none}.markdown-preview .md-toc summary.md-toc-link-wrapper{cursor:pointer;list-style-position:outside}.markdown-preview .md-toc summary.md-toc-link-wrapper::marker{font-size:.85em}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='0']{margin-left:12px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='1']{margin-left:28px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='2']{margin-left:44px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='3']{margin-left:60px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='4']{margin-left:76px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='5']{margin-left:80px}.markdown-preview a.tag,.markdown-preview a.tag:active,.markdown-preview a.tag:link,.markdown-preview a.tag:visited,.markdown-preview span.tag:not(.token){display:inline-block;background-color:var(--vscode-badge-background,rgba(127,127,127,.18));color:var(--vscode-badge-foreground,currentColor);border-radius:2em;font-size:.85em;font-weight:500;padding:.05em .55em;line-height:1.5;white-space:nowrap;text-decoration:none;text-shadow:none;box-shadow:none;transition:background-color .12s ease,opacity .12s ease}.markdown-preview a.tag{cursor:pointer}.markdown-preview a.tag:focus,.markdown-preview a.tag:hover{background-color:var(--vscode-badge-background,rgba(127,127,127,.32));color:var(--vscode-badge-foreground,currentColor);opacity:.85;text-decoration:none;outline:0}.markdown-preview .wikilink-embed-content{border-left:3px solid var(--vscode-textBlockQuote-border,rgba(128,128,128,.3));background:var(--vscode-textBlockQuote-background,rgba(128,128,128,.05));margin:.5em 0;padding:.5em .75em;border-radius:0 3px 3px 0}.markdown-preview .wikilink-embed-content.wikilink-embed-error{border-left-color:var(--vscode-errorForeground,#cf222e);color:var(--vscode-errorForeground,#cf222e);font-style:italic;opacity:.8}.markdown-preview .wikilink-embed-content h1:first-child,.markdown-preview .wikilink-embed-content h2:first-child,.markdown-preview .wikilink-embed-content h3:first-child,.markdown-preview .wikilink-embed-content h4:first-child,.markdown-preview .wikilink-embed-content h5:first-child,.markdown-preview .wikilink-embed-content h6:first-child{margin-top:.25em}.markdown-preview .wikilink-embed-content .wikilink-embed-content{margin:.25em 0;padding:.25em .5em}.markdown-preview .block-id{display:none}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:var(--vscode-scrollbarSlider-background,rgba(150,150,150,.66));border:4px solid var(--vscode-scrollbarSlider-background,rgba(150,150,150,.66));background-clip:content-box}.scrollbar-style::-webkit-scrollbar-thumb:hover{background-color:var(--vscode-scrollbarSlider-hoverBackground,rgba(120,120,120,.66))}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:var(--vscode-scrollbarSlider-background,rgba(150,150,150,.66));border:4px solid var(--vscode-scrollbarSlider-background,rgba(150,150,150,.66));background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb:hover{background-color:var(--vscode-scrollbarSlider-hoverBackground,rgba(120,120,120,.66))}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-details{margin:0;padding:0;border:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='0']{padding-left:0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='1']{padding-left:16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='2']{padding-left:32px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='3']{padding-left:48px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='4']{padding-left:64px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='5']{padding-left:80px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. -->
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="actividad-práctica-5-arquitectura-de-persistencia">Actividad Práctica 5: Arquitectura de Persistencia </h1>
+<h2 id="el-cimiento-de-los-datos">"El Cimiento de los Datos" </h2>
+<p><strong>Materia:</strong> Sistemas de Información II<br>
+<strong>Proyecto:</strong> SmartRoute DSS<br>
+<strong>Caso:</strong> FlashLogistics - El Caos de la Distribución<br>
+<strong>Squad:</strong> Cacatúas<br>
+<strong>Integrantes:</strong> Alex Saul Fernández Valdez; Wilber Perez Subelza<br>
+<strong>Repositorio GitHub:</strong> <a href="https://github.com/Alex-Fernandez-2003/Actividad-2-SDI-II.git">https://github.com/Alex-Fernandez-2003/Actividad-2-SDI-II.git</a><br>
+<strong>GitHub Project / Kanban:</strong> <a href="https://github.com/users/Alex-Fernandez-2003/projects/1/views/1">https://github.com/users/Alex-Fernandez-2003/projects/1/views/1</a><br>
+<strong>Fecha:</strong> 16 de junio de 2026</p>
+<hr>
+<h2 id="1-introducción">1. Introducción </h2>
+<p>La Actividad Práctica 5 tiene como objetivo diseñar la arquitectura de persistencia de <strong>SmartRoute DSS</strong>, el sistema de soporte a la decisión propuesto para resolver el caso FlashLogistics.</p>
+<p>Un DSS no solo debe registrar datos; debe estructurarlos de forma íntegra, relacional y útil para la analítica operativa. En el caso de FlashLogistics, los datos deben permitir responder preguntas críticas como:</p>
+<ul>
+<li>¿Qué pedidos están retrasados?</li>
+<li>¿Qué rutas presentan más incidencias?</li>
+<li>¿Qué conductor tiene mayor porcentaje de entregas puntuales?</li>
+<li>¿Qué pedidos requieren atención urgente?</li>
+<li>¿Qué alertas abiertas debe priorizar el despacho?</li>
+<li>¿Qué rutas generan más fallos o retrasos?</li>
+</ul>
+<p>Por ello, esta actividad transforma el refinamiento de historias de usuario y los modelos UML anteriores en una propuesta de persistencia robusta.</p>
+<hr>
+<h2 id="2-enlaces-solicitados">2. Enlaces solicitados </h2>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Enlace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repositorio GitHub</td>
+<td><a href="https://github.com/Alex-Fernandez-2003/Actividad-2-SDI-II.git">https://github.com/Alex-Fernandez-2003/Actividad-2-SDI-II.git</a></td>
+</tr>
+<tr>
+<td>GitHub Project / Kanban</td>
+<td><a href="https://github.com/users/Alex-Fernandez-2003/projects/1/views/1">https://github.com/users/Alex-Fernandez-2003/projects/1/views/1</a></td>
+</tr>
+<tr>
+<td>Carpeta de modelos</td>
+<td><code>capturas/</code></td>
+</tr>
+<tr>
+<td>Script SQL inicial</td>
+<td><code>database/script-SQL.sql</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-base-de-diseño-tomada-de-la-actividad-4">3. Base de diseño tomada de la Actividad 4 </h2>
+<p>La arquitectura de persistencia parte de las historias críticas refinadas en la Actividad 4:</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Historia crítica</th>
+<th>Entidades principales derivadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HU03</td>
+<td>Asignar pedidos a ruta, conductor y vehículo</td>
+<td><code>pedidos</code>, <code>rutas</code>, <code>ruta_pedidos</code>, <code>conductores</code>, <code>vehiculos</code></td>
+</tr>
+<tr>
+<td>HU05</td>
+<td>Actualizar estado de cada pedido</td>
+<td><code>pedidos</code>, <code>historial_estados</code>, <code>incidencias</code>, <code>usuarios</code></td>
+</tr>
+<tr>
+<td>HU08</td>
+<td>Recibir alertas de retrasos e incidencias</td>
+<td><code>alertas</code>, <code>incidencias</code>, <code>rutas</code>, <code>pedidos</code>, <code>kpi_operativos</code></td>
+</tr>
+</tbody>
+</table>
+<p>Estas historias representan el núcleo operativo y analítico del sistema. Por esa razón, el modelo de datos se diseñó para soportar planificación, trazabilidad, alertas y análisis de indicadores.</p>
+<hr>
+<h2 id="4-diagrama-de-clases-uml-de-persistencia">4. Diagrama de Clases UML de Persistencia </h2>
+<p>El diagrama de clases de persistencia modela las entidades principales de SmartRoute DSS, incluyendo atributos, métodos de negocio, relaciones y multiplicidades.</p>
+<h3 id="diagrama-de-clases">Diagrama de clases </h3>
+<p><img src="./capturas/diagrama-clases-persistencia.png" alt="Diagrama de Clases de Persistencia"></p>
+<hr>
+<h2 id="5-entidades-persistentes-principales">5. Entidades persistentes principales </h2>
+<table>
+<thead>
+<tr>
+<th>Clase</th>
+<th>Responsabilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Usuario</code></td>
+<td>Representa a los usuarios autenticados del sistema y sus roles.</td>
+</tr>
+<tr>
+<td><code>Conductor</code></td>
+<td>Representa al usuario operativo encargado de ejecutar rutas.</td>
+</tr>
+<tr>
+<td><code>ClienteEmpresa</code></td>
+<td>Representa a las empresas clientes que reciben pedidos.</td>
+</tr>
+<tr>
+<td><code>Vehiculo</code></td>
+<td>Representa los vehículos usados para ejecutar rutas.</td>
+</tr>
+<tr>
+<td><code>Pedido</code></td>
+<td>Representa una entrega solicitada por un cliente.</td>
+</tr>
+<tr>
+<td><code>Ruta</code></td>
+<td>Agrupa pedidos y define conductor, vehículo y planificación.</td>
+</tr>
+<tr>
+<td><code>RutaPedido</code></td>
+<td>Entidad intermedia que ordena pedidos dentro de una ruta.</td>
+</tr>
+<tr>
+<td><code>HistorialEstado</code></td>
+<td>Registra cada cambio de estado de un pedido.</td>
+</tr>
+<tr>
+<td><code>Incidencia</code></td>
+<td>Registra problemas ocurridos durante la ejecución de una entrega.</td>
+</tr>
+<tr>
+<td><code>Alerta</code></td>
+<td>Representa señales operativas para la toma de decisiones.</td>
+</tr>
+<tr>
+<td><code>KpiOperativo</code></td>
+<td>Guarda métricas consolidadas para análisis DSS.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-explicación-de-relaciones-uml">6. Explicación de relaciones UML </h2>
+<h3 id="61-herencia">6.1 Herencia </h3>
+<p>Se utiliza herencia entre <code>Usuario</code> y <code>Conductor</code> porque un conductor es un usuario del sistema con información adicional para la operación logística.</p>
+<pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code>Usuario &lt;|-- Conductor
+</code></pre><p>Esto permite mantener datos comunes en <code>Usuario</code>, como nombre, email, rol y estado, mientras que <code>Conductor</code> agrega datos específicos como licencia, teléfono y disponibilidad.</p>
+<hr>
+<h3 id="62-asociación">6.2 Asociación </h3>
+<p>Se utiliza asociación entre <code>ClienteEmpresa</code> y <code>Pedido</code>.</p>
+<pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code>ClienteEmpresa "1" -- "0..*" Pedido
+</code></pre><p>Una empresa cliente puede tener muchos pedidos, pero cada pedido pertenece a una sola empresa cliente.</p>
+<hr>
+<h3 id="63-composición">6.3 Composición </h3>
+<p>Se utiliza composición entre <code>Ruta</code> y <code>RutaPedido</code>.</p>
+<pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code>Ruta "1" *-- "1..*" RutaPedido
+</code></pre><p>La composición se justifica porque los registros de <code>RutaPedido</code> no tienen sentido sin una ruta. Si una ruta se elimina o se cancela definitivamente, sus paradas asociadas pierden su contexto operativo.</p>
+<hr>
+<h3 id="64-asociación-entre-ruta-y-recursos">6.4 Asociación entre ruta y recursos </h3>
+<p>Una ruta debe tener un conductor y un vehículo asignado.</p>
+<pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code>Conductor "1" -- "0..*" Ruta
+Vehiculo "1" -- "0..*" Ruta
+</code></pre><p>Un conductor puede participar en muchas rutas a lo largo del tiempo, pero una ruta planificada tiene un conductor responsable. Lo mismo aplica para vehículos.</p>
+<hr>
+<h3 id="65-composición-entre-pedido-e-historial-de-estado">6.5 Composición entre pedido e historial de estado </h3>
+<pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code>Pedido "1" *-- "0..*" HistorialEstado
+</code></pre><p>El historial de estado pertenece al pedido. Cada cambio de estado existe para explicar la evolución de ese pedido.</p>
+<hr>
+<h3 id="66-asociación-entre-pedido-incidencia-y-alerta">6.6 Asociación entre pedido, incidencia y alerta </h3>
+<pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code>Pedido "1" -- "0..*" Incidencia
+Pedido "1" -- "0..*" Alerta
+Incidencia "0..1" -- "0..*" Alerta
+</code></pre><p>Un pedido puede tener incidencias y alertas. Una incidencia puede generar una o más alertas operativas para el dashboard.</p>
+<hr>
+<h2 id="7-reglas-de-negocio-aplicadas">7. Reglas de negocio aplicadas </h2>
+<table>
+<thead>
+<tr>
+<th>Nº</th>
+<th>Regla de negocio</th>
+<th>Implementación en persistencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RN01</td>
+<td>Un pedido no puede duplicarse dentro de una misma ruta.</td>
+<td><code>UNIQUE(ruta_id, pedido_id)</code> en <code>ruta_pedidos</code>.</td>
+</tr>
+<tr>
+<td>RN02</td>
+<td>Una ruta debe tener conductor y vehículo.</td>
+<td>FK obligatorias en <code>rutas</code>.</td>
+</tr>
+<tr>
+<td>RN03</td>
+<td>Un conductor inactivo no debe recibir rutas nuevas.</td>
+<td>Validación por <code>estado</code> y <code>disponible</code>.</td>
+</tr>
+<tr>
+<td>RN04</td>
+<td>Un vehículo en mantenimiento no debe asignarse a rutas.</td>
+<td>Campo <code>estado</code> con restricción <code>CHECK</code>.</td>
+</tr>
+<tr>
+<td>RN05</td>
+<td>Todo cambio de estado debe quedar auditado.</td>
+<td>Tabla <code>historial_estados</code>.</td>
+</tr>
+<tr>
+<td>RN06</td>
+<td>Si un pedido entra en estado Fallido o Incidencia, debe existir observación.</td>
+<td>Restricción y validación en <code>historial_estados</code> / <code>incidencias</code>.</td>
+</tr>
+<tr>
+<td>RN07</td>
+<td>Las alertas deben tener severidad.</td>
+<td>Campo <code>severidad</code> con <code>CHECK</code>.</td>
+</tr>
+<tr>
+<td>RN08</td>
+<td>Las métricas deben permitir análisis por fecha, ruta y conductor.</td>
+<td>Tabla <code>kpi_operativos</code>.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="8-modelo-relacional">8. Modelo Relacional </h2>
+<p>El modelo relacional transforma las clases persistentes en tablas normalizadas con claves primarias, claves foráneas, dominios y restricciones.</p>
+<h3 id="archivo-del-modelo-relacional">Archivo del modelo relacional </h3>
+<pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code>modelo-relacional.md
+</code></pre><h3 id="script-sql-inicial">Script SQL inicial </h3>
+<pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code>database/script-SQL.sql
+</code></pre><hr>
+<h2 id="9-diccionario-de-datos-resumido">9. Diccionario de datos resumido </h2>
+<table>
+<thead>
+<tr>
+<th>Tabla</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>usuarios</code></td>
+<td>Usuarios autenticados del sistema.</td>
+</tr>
+<tr>
+<td><code>conductores</code></td>
+<td>Información operativa de conductores.</td>
+</tr>
+<tr>
+<td><code>clientes_empresas</code></td>
+<td>Empresas clientes de FlashLogistics.</td>
+</tr>
+<tr>
+<td><code>vehiculos</code></td>
+<td>Vehículos utilizados en la operación.</td>
+</tr>
+<tr>
+<td><code>pedidos</code></td>
+<td>Pedidos o entregas solicitadas por clientes.</td>
+</tr>
+<tr>
+<td><code>rutas</code></td>
+<td>Rutas planificadas para despacho.</td>
+</tr>
+<tr>
+<td><code>ruta_pedidos</code></td>
+<td>Relación ordenada entre rutas y pedidos.</td>
+</tr>
+<tr>
+<td><code>historial_estados</code></td>
+<td>Auditoría de cambios de estado de pedidos.</td>
+</tr>
+<tr>
+<td><code>incidencias</code></td>
+<td>Problemas registrados durante la operación.</td>
+</tr>
+<tr>
+<td><code>alertas</code></td>
+<td>Alertas DSS para atención operativa.</td>
+</tr>
+<tr>
+<td><code>kpi_operativos</code></td>
+<td>Métricas consolidadas para análisis y soporte a decisiones.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="10-validación-de-soporte-a-decisiones">10. Validación de soporte a decisiones </h2>
+<p>El diseño propuesto facilita la toma de decisiones porque estructura los datos operativos de forma relacional y analítica.</p>
+<h3 id="101-decisiones-sobre-retrasos">10.1 Decisiones sobre retrasos </h3>
+<p>La relación entre <code>pedidos</code>, <code>rutas</code>, <code>ruta_pedidos</code>, <code>historial_estados</code> y <code>alertas</code> permite identificar pedidos retrasados, pedidos con incidencias y rutas que requieren atención inmediata.</p>
+<h3 id="102-decisiones-sobre-eficiencia-de-rutas">10.2 Decisiones sobre eficiencia de rutas </h3>
+<p>La tabla <code>rutas</code>, junto con <code>ruta_pedidos</code> y <code>kpi_operativos</code>, permite analizar cuántos pedidos fueron entregados, cuántos fallaron y cuál fue el porcentaje de puntualidad.</p>
+<h3 id="103-decisiones-sobre-desempeño-de-conductores">10.3 Decisiones sobre desempeño de conductores </h3>
+<p>La relación entre <code>conductores</code>, <code>rutas</code>, <code>pedidos</code> e <code>historial_estados</code> permite medir desempeño por conductor, cantidad de pedidos atendidos, incidencias generadas y entregas puntuales.</p>
+<h3 id="104-decisiones-sobre-atención-al-cliente">10.4 Decisiones sobre atención al cliente </h3>
+<p>La relación entre <code>clientes_empresas</code> y <code>pedidos</code> permite identificar clientes con mayor cantidad de retrasos, incidencias o entregas fallidas.</p>
+<h3 id="105-decisiones-basadas-en-alertas">10.5 Decisiones basadas en alertas </h3>
+<p>La tabla <code>alertas</code> permite al despachador priorizar atención según severidad, tipo de alerta y estado. Esto transforma datos operativos en señales concretas para actuar.</p>
+<hr>
+<h2 id="11-normalización-aplicada">11. Normalización aplicada </h2>
+<p>El modelo se encuentra orientado a tercera forma normal de manera práctica:</p>
+<table>
+<thead>
+<tr>
+<th>Principio</th>
+<th>Aplicación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Evitar duplicidad</td>
+<td>Conductores, vehículos, clientes y pedidos se almacenan en tablas separadas.</td>
+</tr>
+<tr>
+<td>Separar relaciones muchos a muchos</td>
+<td><code>ruta_pedidos</code> separa la relación entre rutas y pedidos.</td>
+</tr>
+<tr>
+<td>Mantener trazabilidad</td>
+<td><code>historial_estados</code> evita sobrescribir cambios importantes.</td>
+</tr>
+<tr>
+<td>Soportar analítica</td>
+<td><code>kpi_operativos</code> permite consolidar métricas sin alterar datos transaccionales.</td>
+</tr>
+<tr>
+<td>Mantener integridad</td>
+<td>Las FK conectan pedidos, rutas, usuarios, conductores y vehículos.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="12-evidencia-de-github">12. Evidencia de GitHub </h2>
+<p>Para cumplir con la consigna, se deben subir al repositorio:</p>
+<table>
+<thead>
+<tr>
+<th>Archivo</th>
+<th>Ubicación sugerida</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diagrama de clases <code>.png</code></td>
+<td><code>capturas/diagrama-clases-persistencia.png</code></td>
+</tr>
+<tr>
+<td>Modelo relacional <code>.md</code></td>
+<td><code>modelo-relacional.md</code></td>
+</tr>
+<tr>
+<td>Diccionario de datos <code>.md</code></td>
+<td><code>modelo-persistencia-diccionario.md</code></td>
+</tr>
+<tr>
+<td>Script SQL inicial</td>
+<td><code>database/script-SQL.sql</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="14-conclusión">14. Conclusión </h2>
+<p>La arquitectura de persistencia propuesta para SmartRoute DSS estructura los datos centrales de FlashLogistics: pedidos, rutas, conductores, vehículos, estados, incidencias, alertas y KPIs. Este diseño no se limita a un CRUD genérico; está alineado con el problema operativo del caso y permite generar información útil para la toma de decisiones.</p>
+<p>Al aplicar relaciones, multiplicidades, restricciones, claves primarias y foráneas, el sistema puede garantizar integridad referencial y trazabilidad. Esto permite que el DSS sea confiable, escalable y preparado para futuras mejoras analíticas.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
